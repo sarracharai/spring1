@@ -1,14 +1,14 @@
 package com.example.demo.repos;
 
 import java.util.List;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import com.example.demo.entities.Categorie;
 import com.example.demo.entities.Produit;
-
+@RepositoryRestResource(path = "rest")
 public interface ProduitRepository extends JpaRepository<Produit, Long> {
 	
 	List<Produit> findByNomProduit(String nom);

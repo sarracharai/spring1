@@ -133,12 +133,6 @@ class ProduitsApplicationTests {
 	System.out.println(p);
 	}
 	}
-	
-	
-	
-
-	
-
 
 
 }
